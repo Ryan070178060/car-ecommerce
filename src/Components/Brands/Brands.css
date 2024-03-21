@@ -1,0 +1,17 @@
+.brands-container {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to change the alignment of the images */
+    align-items: center; /* Adjust this property to change the vertical alignment of the images */
+    margin: 80px; /* Adjust margin as needed */
+  }
+  
+  .brand-image {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing between images */
+  }
+  
+  .brand-image:last-child {
+    margin-right: 0; /* Remove margin from the last image to avoid extra spacing */
+  }
+  

@@ -1,0 +1,46 @@
+.container{
+    height: 100vh;
+    background:linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.welcome-hero-txt{
+    text-align: center;
+    padding:200px 0 322px;
+    padding-top: 220px;
+}
+.welcome-hero-txt h2 {
+    font-size: 42px;
+    color: wheat;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.welcome-hero-txt p {
+    font-size: 18px;
+    text-transform: initial;
+    color:wheat;
+    font-weight: 500;
+    max-width: 735px;
+    margin: 0 auto;
+}
+.welcome-btn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+    -webkit-transition: .3s linear; 
+    -moz-transition:.3s linear; 
+    -ms-transition:.3s linear; 
+    -o-transition:.3s linear;
+    transition: .3s linear;
+}
+.welcome-btn:hover{
+    background: #0102fa;
+}

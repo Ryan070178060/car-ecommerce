@@ -1,0 +1,43 @@
+.new-cars {
+    text-align: center;
+    margin-top: 0px;
+    background-color: whitesmoke;
+
+  }
+  .new-cars h2{
+    margin-top: 6px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .kontainer {
+    display: flex;
+  gap: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  
+    
+  }
+  .katamba{
+    text-align: center;
+    width: 50%;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    background: transparent;
+  }
+  .kontainer img {
+    width: 500px;
+  }
+  
+  .kontainer h3 {
+    margin-top: 10px;
+    font-size:  30px;
+    font-weight:  500;
+    margin-bottom: 26px;
+  }
+  
+  .kontainer p {
+    margin-top: 10px;
+  }
+  
