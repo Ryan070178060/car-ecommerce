@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 import './NewCollections.css';
 
@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection] = useState([]);
 
   useEffect(()=>{
-    fetch('httpss://localhost:4000/newcollection')
+    fetch('https://car-backend-tt86.onrender.com/newcollection')
     .then((response)=>response.json())
     .then((data)=>setNew_collection(data));
 

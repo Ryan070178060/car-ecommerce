@@ -7,7 +7,7 @@ const ShopContextProvider=(props) => {
     const [all_product,setAll_product] = useState([]);
     
     useEffect(() => {
-        fetch('https://localhost:4000/allproducts')
+        fetch('https://car-backend-tt86.onrender.com/allproducts')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
