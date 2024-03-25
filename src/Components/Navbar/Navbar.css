@@ -125,17 +125,17 @@
 }
 @media(max-width:500px){
     .navbar{
-        width:auto;
+        width:100%;
         gap: 0;
     }
     .nav-logo{
-        transform: scale(0.8);
+        transform: scale(0.4);
     }
     .nav-menu{
-        height: 70px;
-        top: 50px;
+        display: flex;
+        background-color: black;
+        width: fit-content;
+    
     }
-    .nav-login-cart{
-        transform: scale(0.5);
-    }
+    
 }

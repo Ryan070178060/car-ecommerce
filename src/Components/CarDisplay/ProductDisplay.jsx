@@ -1,9 +1,14 @@
 import React from 'react';
-import './CarDisplay.css';
+import './ProductDisplay.css';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
+import { ShopContext } from '../../Context/ShopContext';
+import { useContext } from 'react';
 
-const CarDisplay = ({ product }) => {
+const ProductDisplay = (props) => {
+    const { product } = props;
+    const {addToCart} = useContext(ShopContext);
+
     return (
         <div className='productdisplay'>
             <div className="productdisplay-left">
@@ -44,11 +49,12 @@ const CarDisplay = ({ product }) => {
                         <div>XXL</div>
                     </div>
                 </div>
-                <p className="productdisplay-right-category"><span>Category :</span>Sports, Muscle,Electric</p>
+                <button onClick={()=>{addToCart(product.id)}}>Add To Cart</button>
+                <p className="productdisplay-right-category"><span>Category :</span>Women, T-shirt, Crop top</p>
                 <p className="productdisplay-right-category"><span>Tags :</span>Model, Latest</p>
             </div>
         </div>
     );
 };
 
-export default CarDisplay;
+export default ProductDisplay;
