@@ -1,37 +1,24 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const ShopContext=createContext(null);
+export const ShopContext = createContext(null);
 
-const ShopContextProvider=(props) => {
+const ShopContextProvider = (props) => {
+    const [all_product, setAll_product] = useState([]);
 
-    const [all_product,setAll_product] = useState([]);
-    
     useEffect(() => {
         fetch('https://car-backend-tt86.onrender.com/allproducts')
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then((data) => {
-                console.log("Fetched data:", data);
-                setAll_product(data);
-            })
-            .catch(error => {
-                console.error("Error fetching data:", error);
-            });
+            .then((response) => response.json())
+            .then((data) => setAll_product(data))
+            .catch((error) => console.error("Error fetching data:", error)); // Handle any fetch errors
     }, []);
-    
-    
-    const contextValue = {all_product};
 
-
+    const contextValue = { all_product };
 
     return (
         <ShopContext.Provider value={contextValue}>
             {props.children}
         </ShopContext.Provider>
-    )
-}
+    );
+};
+
 export default ShopContextProvider;

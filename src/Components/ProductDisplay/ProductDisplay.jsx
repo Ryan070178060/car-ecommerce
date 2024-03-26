@@ -2,13 +2,9 @@ import React from 'react';
 import './ProductDisplay.css';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
-import { ShopContext } from '../../Context/ShopContext';
-import { useContext } from 'react';
-
 const ProductDisplay = (props) => {
     const { product } = props;
-    const {addToCart} = useContext(ShopContext);
-
+    
     return (
         <div className='productdisplay'>
             <div className="productdisplay-left">
@@ -37,20 +33,19 @@ const ProductDisplay = (props) => {
                     <div className="productdisplay-right-price-new">Ksh {product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description">
-                    A lightweight visually knitted pullover shirt with close fitting.
+                    You get the best cars at our company and no other car dealer has better deals than us.
                 </div>
                 <div className="productdisplay-right-size">
-                    <h1>Select size</h1>
+                    <h1>Select Color</h1>
                     <div className="productdisplay-right-sizes">
-                        <div>S</div>
-                        <div>M</div>
-                        <div>L</div>
-                        <div>XL</div>
-                        <div>XXL</div>
+                        <div>Red</div>
+                        <div>White</div>
+                        <div>BLack</div>
+                        <div>Grey</div>
+                        <div>Blue</div>
                     </div>
                 </div>
-                <button onClick={()=>{addToCart(product.id)}}>Add To Cart</button>
-                <p className="productdisplay-right-category"><span>Category :</span>Women, T-shirt, Crop top</p>
+                <p className="productdisplay-right-category"><span>Category :</span>SUV,Sports,Electric, Muscle</p>
                 <p className="productdisplay-right-category"><span>Tags :</span>Model, Latest</p>
             </div>
         </div>

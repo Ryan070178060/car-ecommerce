@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //import LoginSignup from './pages/LoginSignup';
 import { Shop } from './Pages/shop';
 import Footer from './Components/Footer/Footer';
-import CarCategory from './Pages/CarCategory';
 import Product from './Pages/Product';
 import Navbar from './Components/Navbar/Navbar';
+import ShopCategory from './Pages/ShopCategory';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/' element={<Shop/>} />
-          <Route path='/muscle' element={<CarCategory   category="men"/>} />
-          <Route path='/sports' element={<CarCategory  category="sports"/>}/>
-          <Route path='/electric' element={<CarCategory  category="electric"/>}/>
+          <Route path='/muscle' element={<ShopCategory   category="muscle"/>} />
+          <Route path='/sports' element={<ShopCategory  category="sports"/>}/>
+          <Route path='/electric' element={<ShopCategory  category="electric"/>}/>
           <Route path="/product" element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
 

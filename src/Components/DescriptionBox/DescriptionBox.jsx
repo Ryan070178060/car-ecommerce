@@ -10,8 +10,8 @@ const DescriptionBox = () => {
             <div className="descriptionbox-nav-box fade">Reviews  (122)</div>
              </div>
              <div className="descriptionbox-description">
-            <p>Website falani ngori sana, unaeza buy kladi ngori ngori from here bana, wee dm tuu, hii website ni international banaa</p>
-            <p>Unaeza buy hapa anytime anyday unajiskia banaa, luku ni fisa na hazijatoka gikombaa</p>
+            <p>Checkout at our store for the best car deals incase you want to roll or flex with the best cars in town</p>
+            <p>There is something for everyone with monies</p>
              </div>
 
         </div>

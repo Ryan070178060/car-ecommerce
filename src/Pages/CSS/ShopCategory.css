@@ -1,29 +1,29 @@
-.carcategory-banner{
+.shopcategory-banner{
     display: block;
     margin: 30px auto;
     width: 82%;
 }
-.carcategory-indexSort{
+.shopcategory-indexSort{
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
 }
-.carcategory-sort{
+.shopcategory-sort{
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid beige;
 }
-.carcategory-indexSort p span{
+.shopcategory-indexSort p span{
     font-weight: 600;
 }
-.carcategory-products{
+.shopcategory-products{
     margin: 20px 170px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     row-gap: 80px;
 }
-.carcategory-loadmore{
+.shopcategory-loadmore{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,30 +38,31 @@
     
 }
 @media(max-width:1280px){
-    .carcategory-banner{
+    .shopcategory-banner{
         margin: 20px auto;
         width: 90%;
     }
-    .carcategory-indexSort{
+    .shopcategory-indexSort{
         width: 90%;
         margin: auto;
     }
-    .carcategory-sort{
+    .shopcategory-sort{
         padding: 5px 10px;
         font-size: 12px;
     }
-    .carcategory-indexSort p{
+    .shopcategory-indexSort p{
         font-size: 12px;
     }
-    .carcategory-products{
-        width: 90%;
+    .shopcategory-products{
+        width: 100%;
         margin: 10px auto;
-        row-gap: 40PX;
+        row-gap: 100PX;
     }
-    .carcategory-products .item{
+    .shopcategory-products .item{
         margin: auto;
+        
     }
-    .carcategory-loadmore{
+    .shopcategory-loadmore{
         margin: 100px auto;
         width: 200px;
         height: 60px;
@@ -70,13 +71,15 @@
 
 }
 @media(max-width:800px){
-    .carcategory-banner{
+    .shopcategory-banner{
         width: 95%;
     }
-    .carcategory-products{
-        width: 95%;
+    .shopcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        gap: 40PX;
     }
-    .carcategory-loadmore{
+    .shopcategory-loadmore{
         margin: 60px auto;
         width: 150px;
         height: 40px;
@@ -84,7 +87,7 @@
     }
 }
 @media(max-width:500px){
-    .carcategory-products{
+    .shopcategory-products{
         grid-template-columns: 1fr 1fr;
     }
 }
