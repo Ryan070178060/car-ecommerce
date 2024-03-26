@@ -1,13 +1,14 @@
-.shopcategory-banner{
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+.shop-category{
+    background-color: rgb(49, 68, 49);
+    
+    
 }
 .shopcategory-indexSort{
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
+    color: antiquewhite;
 }
 .shopcategory-sort{
     padding: 10px 20px;
@@ -16,6 +17,7 @@
 }
 .shopcategory-indexSort p span{
     font-weight: 600;
+    color: antiquewhite;
 }
 .shopcategory-products{
     margin: 20px 170px;
@@ -31,7 +33,7 @@
     width: 233px;
     height: 69px;
     border-radius: 75px;
-    background: green;
+    background: rgb(253, 166, 4);
     color: beige;
     font-size: 18px;
     font-weight: 500;
