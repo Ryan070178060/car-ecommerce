@@ -1,0 +1,15 @@
+.service-des {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .service-des h2 {
+    color: #333;
+  }
+  
+  .service-des p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
