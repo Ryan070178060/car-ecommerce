@@ -9,11 +9,16 @@ const ShopContextProvider = (props) => {
 
     useEffect(() => {
         fetch('https://car-backend-tt86.onrender.com/allproducts')
-            .then((response) => response.json())
-            .then((data) => setAll_product(data))
-            .catch((error) => console.error("Error fetching data:", error)); // Handle any fetch errors
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then((data) => setAll_product(data))
+        .catch((error) => console.error("Error fetching data:", error));
     }, []);
-
+    
     const contextValue = { all_product };
 
     return (
