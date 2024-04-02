@@ -35,14 +35,16 @@
     height: 60px;
     background: #4e4ffa;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 30px; /* Adjust this value to change the roundness */
+    border: none; /* Remove any existing border */
     margin-top: 55px;
     -webkit-transition: .3s linear; 
     -moz-transition: .3s linear; 
     -ms-transition: .3s linear; 
     -o-transition: .3s linear;
     transition: .3s linear;
-  }
+}
+
   
   .welcome-btn:hover {
     background: #0102fa;

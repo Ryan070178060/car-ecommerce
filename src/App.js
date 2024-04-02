@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar/Navbar';
 import ShopCategory from './Pages/ShopCategory';
 import Service from './Components/Services/Services';
 import ServiceDes from './Components/ServiceDes/ServiceDes';
+import Insurance from './Components/ServiceDes/Insurance';
+import Waranty from './Components/ServiceDes/Waranty';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/services" element={<Service/>} />
           <Route path="/service-description" element={<ServiceDes/>} />
+          <Route path='/insurance' element={<Insurance/>} />
+          <Route path='/waranty' element={<Waranty/>} />
         </Routes>
         <Footer />
       </Router>

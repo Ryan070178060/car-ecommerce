@@ -1,5 +1,6 @@
 .shop-category{
     background-color: rgb(49, 68, 49);
+    margin-bottom: 0%;
     
     
 }
@@ -25,20 +26,8 @@
     grid-template-columns: 1fr 1fr 1fr ;
     row-gap: 80px;
 }
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
-    background: rgb(253, 166, 4);
-    color: beige;
-    font-size: 18px;
-    font-weight: 500;
+
     
-}
 @media(max-width:1280px){
     .shopcategory-banner{
         margin: 20px auto;
@@ -63,12 +52,6 @@
     .shopcategory-products .item{
         margin: auto;
         
-    }
-    .shopcategory-loadmore{
-        margin: 100px auto;
-        width: 200px;
-        height: 60px;
-        font-size: 16px;
     }
 
 }

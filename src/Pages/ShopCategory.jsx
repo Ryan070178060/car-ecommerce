@@ -28,9 +28,7 @@ import Item from '../Components/Item/Item'
 
       })}
     </div>
-    <div className="shopcategory-loadmore">
-      Explore More
-    </div>
+ 
 
     
     </div>

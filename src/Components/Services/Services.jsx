@@ -1,6 +1,8 @@
 import React from 'react';
 import './Services.css'
 import { Link } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 const Service = () => {
   return (
     <section id="service" className="service">
@@ -9,9 +11,9 @@ const Service = () => {
                 <div className="single-service-icon">
                 <i className="fa fa-car" aria-hidden="true"></i>
                 </div>
-                <h2><Link to="/service-description">Unlimited repair warranty</Link></h2>
+                <h2><Link to="/service-description">Car Service and Maintinance</Link></h2>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
+                  Get the best services and maintince at our company garage.  
                 </p>
             
             </div>
@@ -19,9 +21,9 @@ const Service = () => {
                 <div className="single-service-icon">
                 <i className="fa fa-wrench" aria-hidden="true"></i>
                 </div>
-                <h2><a href="#">Unlimited repair warranty</a></h2>
+                <h2><Link to="/waranty"> Unlimited repair waranty</Link></h2>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
+                  Get unlimited repair waranty for the new cars bought.  
                 </p>
               
             </div>
@@ -29,9 +31,9 @@ const Service = () => {
                 <div className="single-service-icon">
                 <i className="fa fa-umbrella" aria-hidden="true"></i>
                 </div>
-                <h2><a href="#">Insurance support</a></h2>
+                <h2><Link to="/Insurance">Insurance support</Link></h2>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. 
+                  Get insurance support at a discounted price on new cars bought. 
                 </p>
             
             </div>
