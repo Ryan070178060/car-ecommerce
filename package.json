@@ -2,7 +2,7 @@
   "name": "car-ecommerce",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://car-backend-tt86.onrender.com/",
+  "proxy":"https://car-backend-tt86.onrender.com",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@testing-library/jest-dom": "^5.17.0",
