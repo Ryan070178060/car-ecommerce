@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection] = useState([]);
 
   useEffect(()=>{
-    fetch('https://car-backend-tt86.onrender.com/allproducts').then((response)=>response.json())
+    fetch('https://autodealer.onrender.com/allproducts').then((response)=>response.json())
     .then((data)=>setNew_collection(data))
     .catch((error) => console.error("Error fetching data:", error)); // Handle any fetch errors
   },[])
