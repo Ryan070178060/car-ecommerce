@@ -8,7 +8,7 @@ const ShopContextProvider = (props) => {
     const [all_product, setAll_product] = useState([]);
 
     useEffect(() => {
-        fetch('api/allproducts')
+        fetch('/allproducts')
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
