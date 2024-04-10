@@ -1,0 +1,69 @@
+/* Base styles */
+.new-cars {
+  text-align: center;
+  margin-top: 0px;
+  background-color: whitesmoke;
+}
+
+.new-cars h2 {
+  margin-top: 6px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.kontainer {
+  display: flex;
+  gap: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.katamba {
+  text-align: center;
+  width: 50%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  background: transparent;
+}
+
+.kontainer img {
+  width: 100%;
+  max-width: 500px; /* Added max-width to prevent image overflow */
+}
+
+.kontainer h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.kontainer p {
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+  .new-cars h2 {
+    font-size: 36px;
+  }
+
+  .kontainer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .katamba {
+    width: 100%; /* Make katamba full width */
+  }
+
+  .kontainer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .kontainer img {
+    max-width: 100%; /* Ensure images don't overflow container */
+  }
+}
