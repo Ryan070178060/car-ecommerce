@@ -35,6 +35,7 @@
     height: 60px;
     background: #4e4ffa;
     color: #fff;
+    cursor: pointer;
     border-radius: 30px; /* Adjust this value to change the roundness */
     border: none; /* Remove any existing border */
     margin-top: 55px;

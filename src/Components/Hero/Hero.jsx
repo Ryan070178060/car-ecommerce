@@ -3,7 +3,7 @@ import "./Hero.css"
 
 const Hero = () => {
   // Replace '1234567890' with your actual phone number
-  const phoneNumber = '0701978060';
+  const phoneNumber = '+254701978060';
 
   const openWhatsAppContact = () => {
     // Redirect to WhatsApp with the phone number

@@ -2,9 +2,17 @@ import React from 'react';
 import './ProductDisplay.css';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
+
 const ProductDisplay = (props) => {
     const { product } = props;
-    
+
+    const phoneNumber = '+254701978060';
+
+  const openWhatsAppContact = () => {
+    // Redirect to WhatsApp with the phone number
+    window.location.href = `https://wa.me/${phoneNumber}`;
+  };
+
     return (
         <div className='productdisplay'>
             <div className="productdisplay-left">
@@ -40,13 +48,15 @@ const ProductDisplay = (props) => {
                     <div className="productdisplay-right-sizes">
                         <div>Red</div>
                         <div>White</div>
-                        <div>BLack</div>
+                        <div>Black</div>
                         <div>Grey</div>
                         <div>Blue</div>
                     </div>
                 </div>
                 <p className="productdisplay-right-category"><span>Category :</span>SUV,Sports,Electric, Muscle</p>
                 <p className="productdisplay-right-category"><span>Tags :</span>Model, Latest</p>
+                {/* Button added here */}
+                <button className="welcome-btn" onClick={openWhatsAppContact}>Order Now</button>
             </div>
         </div>
     );

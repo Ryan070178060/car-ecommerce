@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection,setNew_collection] = useState([]);
 
   useEffect(()=>{
-    fetch('/allproducts').then((response)=>response.json())
+    fetch('http://localhost:4000/allproducts').then((response)=>response.json())
     .then((data)=>setNew_collection(data))
     .catch((error) => console.error("Error fetching data:", error)); // Handle any fetch errors
   },[])
