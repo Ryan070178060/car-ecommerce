@@ -4,6 +4,7 @@
   justify-content: space-between; /* Adjust this property to change the alignment of the images */
   align-items: center; /* Adjust this property to change the vertical alignment of the images */
   margin: 80px; /* Adjust margin as needed */
+  height: fit-content;
 }
 
 .brand-image {
@@ -22,7 +23,8 @@
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
     justify-content: center; /* Center items horizontally */
     margin: 20px; /* Adjust margin for smaller screens */
-    margin-bottom: 5px;
+    height: fit-content;
+    margin-bottom: 1px;
   }
 
   .brand-image {

@@ -1,6 +1,6 @@
 .shop-category{
     background-color: rgb(49, 68, 49);
-    margin-bottom: 0%;
+    margin-bottom: 2%;
     
     
 }
@@ -74,5 +74,10 @@
 @media(max-width:500px){
     .shopcategory-products{
         grid-template-columns: 1fr 1fr;
+    }
+    .shopcategory-products{
+        width: 90%;
+        margin: 10px auto;
+        gap: 20PX;
     }
 }

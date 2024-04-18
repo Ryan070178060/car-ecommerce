@@ -37,3 +37,16 @@
 .service-des ul li:last-child {
   margin-bottom: 0; /* Removed margin bottom for the last li */
 }
+@media(max-width:500px){
+  service-des {
+    margin: 0 auto;
+    padding-top: 25px;
+    margin-top: 20px;
+  }
+  .service-des h2 {
+    color: #333;
+    font-size: 28px; /* Added font size */
+    margin-top: 20px; /* Added margin bottom */
+    padding-top: 30px;
+  }
+}  
