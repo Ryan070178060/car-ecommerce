@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:4000/newcollection')
+    fetch('https://car-backend-1.onrender.com/newcollection')
       .then((response) => response.json())
       .then((data) => {
         setNewCollection(data);
