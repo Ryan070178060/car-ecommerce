@@ -43,6 +43,7 @@
     padding-bottom: 6px;
     background: whitesmoke;
     border: 1px solid snow;
+    border-radius: 8px;
 }
 .footer-copyright{
     display: flex;
