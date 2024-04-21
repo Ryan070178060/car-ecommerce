@@ -1,83 +1,150 @@
 /* Base styles */
 .container {
-    height: 100vh;
+  height: 100vh;
+  background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-hero-txt {
+  text-align: center;
+  padding: 200px 0 100px; /* Adjusted padding */
+}
+
+.welcome-hero-txt h2 {
+  font-size: 42px;
+  color: wheat;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.welcome-hero-txt p {
+  font-size: 18px;
+  text-transform: initial;
+  color: wheat;
+  font-weight: 500;
+  max-width: 735px;
+  margin: 0 auto;
+}
+
+.welcome-btn {
+  display: inline-block;
+  width: 230px;
+  height: 60px;
+  background: #4e4ffa;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px; /* Adjust this value to change the roundness */
+  border: none; /* Remove any existing border */
+  margin-top: 35px;
+  margin-bottom: 20px; /* Added margin to the bottom */
+  -webkit-transition: .3s linear; 
+  -moz-transition: .3s linear; 
+  -ms-transition: .3s linear; 
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.welcome-btn:hover {
+  background: #0102fa;
+}
+
+/* Style for the search form */
+form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding-top: 20px; /* Added padding to the top */
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 15%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Optional: Add styles for the submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the searched-item */
+.searched-item {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+}
+
+/* Style for the searched-item link */
+.searched-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for the searched-item paragraph */
+.searched-item p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Optional: Add styles for the searched-item hover effect */
+.searched-item:hover {
+  background-color: #f9f9f9;
+}
+
+
+/* Responsive styles */
+@media (max-width: 500px) {
+  .container {
+    height: fit-content;
     background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
     align-items: center;
     justify-content: center;
   }
-  
   .welcome-hero-txt {
     text-align: center;
-    padding: 200px 0 322px;
-    padding-top: 220px;
+    height: 10vh;
   }
-  
-  .welcome-hero-txt h2 {
-    font-size: 42px;
-    color: wheat;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 45px;
-  }
-  
-  .welcome-hero-txt p {
-    font-size: 18px;
-    text-transform: initial;
-    color: wheat;
-    font-weight: 500;
-    max-width: 735px;
-    margin: 0 auto;
-  }
-  
-  .welcome-btn {
-    display: inline-block;
-    width: 230px;
-    height: 60px;
-    background: #4e4ffa;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 30px; /* Adjust this value to change the roundness */
-    border: none; /* Remove any existing border */
-    margin-top: 55px;
-    -webkit-transition: .3s linear; 
-    -moz-transition: .3s linear; 
-    -ms-transition: .3s linear; 
-    -o-transition: .3s linear;
-    transition: .3s linear;
-}
 
-  
-  .welcome-btn:hover {
-    background: #0102fa;
+  .welcome-hero-txt h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 500px) {
-    .container {
-        height:fit-content;
-        background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
-        align-items: center;
-        justify-content: center;
-      }
-      .welcome-hero-txt {
-        text-align: center;
-       height: 10vh;
-      }
-  
-    .welcome-hero-txt h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-  
-    .welcome-hero-txt p {
-      font-size: 16px;
-      max-width: 500px;
-    }
-  
-    .welcome-btn {
-      width: 180px;
-      height: 50px;
-      margin-top: 40px;
-    }
+
+  .welcome-hero-txt p {
+    font-size: 16px;
+    max-width: 500px;
   }
-  
+
+  .welcome-btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px; /* Added margin to the bottom */
+  }
+}
