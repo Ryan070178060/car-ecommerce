@@ -6,22 +6,22 @@ import Item from '../Item/Item';
 const Hero = () => {
   const phoneNumber = '+254701978060';
   const navigate = useNavigate(); // Use useNavigate hook
-  
+
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchedItem, setSearchedItem] = useState({});
+  const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
     fetchProducts();
-  }, [searchQuery]); // Add searchQuery to the dependency array
+  }, []); // Fetch products only once on component mount
 
   const fetchProducts = () => {
     fetch('https://car-backend-1.onrender.com/allproducts')
       .then(response => response.json())
       .then(data => {
         setAllProducts(data);
-        filterProducts(searchQuery, data);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -36,13 +36,15 @@ const Hero = () => {
 
   const filterProducts = (query, products) => {
     if (!query) {
-      setFilteredProducts(products);
+      setFilteredProducts([]);
+      setSuggestions([]);
       return;
     }
     const filtered = products.filter(product =>
       product.name.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredProducts(filtered);
+    setSuggestions(filtered.slice(0, 5)); // Show only first 5 suggestions
   };
 
   const handleSubmit = (e) => {
@@ -78,6 +80,17 @@ const Hero = () => {
           placeholder="Search for products..."
         />
         <button type="submit">Search</button>
+        {suggestions.length > 0 && (
+          <ul className="suggestions">
+            {suggestions.map((product, index) => (
+              <li key={index}>
+                <Link to={`/product/${product.id}`}>
+                  {product.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </form>
       {searchedItem.id && ( // Render searched item if it exists
         <div className="searched-item">

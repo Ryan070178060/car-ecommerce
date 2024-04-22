@@ -117,6 +117,38 @@ button[type="submit"]:hover {
   background-color: #f9f9f9;
 }
 
+/* Style for the suggestions */
+.suggestions {
+  position: absolute;
+  top: calc(80% + 1px); /* Adjusted top position */
+  left: 10%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+  list-style: none;
+}
+
+/* Style for the suggestion items */
+.suggestions li {
+  padding: 5px 0;
+}
+
+/* Style for the suggestion links */
+.suggestions li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional: Add styles for the suggestion item hover effect */
+.suggestions li:hover {
+  background-color: #f9f9f9;
+}
 
 /* Responsive styles */
 @media (max-width: 500px) {
