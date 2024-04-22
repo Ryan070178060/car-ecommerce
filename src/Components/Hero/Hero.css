@@ -153,7 +153,276 @@ button[type="submit"]:hover {
 /* Responsive styles */
 @media (max-width: 500px) {
   .container {
-    height: fit-content;
+    height: 70vh;
+    background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
+    display: flex; /* Added display flex */
+    flex-direction: column; /* Added flex direction */
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-hero-txt {
+    
+    margin-left: 2px;
+    margin-right: 32px;
+    padding: 22px 32px;
+    margin-bottom: 190px;
+    margin-top: 2px;
+    max-width: 500px; /* Added max-width */
+  }
+
+  .welcome-hero-txt h2 {
+    font-size: 32px;
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+
+  .welcome-hero-txt p {
+    font-size: 16px;
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+
+  .welcome-btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 20px; /* Adjusted margin */
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+}
+
+
+form {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  margin-bottom: 180px;
+ 
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: none;
+  width: 15%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Optional: Add styles for the submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the searched-item */
+.searched-item {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+}
+
+/* Style for the searched-item link */
+.searched-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for the searched-item paragraph */
+.searched-item p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Optional: Add styles for the searched-item hover effect */
+.searched-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style for the suggestions */
+.suggestions {
+  position: absolute;
+  top: calc(80% + 1px); /* Adjusted top position */
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+  list-style: none;
+}
+
+/* Style for the suggestion items */
+.suggestions li {
+  padding: 5px 0;
+}
+
+/* Style for the suggestion links */
+.suggestions li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional: Add styles for the suggestion item hover effect */
+.suggestions li:hover {
+  background-color: #f9f9f9;
+}
+@media (max-width: 400px) {
+  .container {
+    height: 80vh;
+    background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
+    align-items: center;
+    justify-content: center;
+  }
+  .welcome-hero-txt {
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 380px;
+  }
+
+  .welcome-hero-txt h2 {
+    font-size: 32px;
+    margin-bottom: 0px;
+  }
+
+  .welcome-hero-txt p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+
+  .welcome-btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 40px;
+     
+  }
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  margin-bottom: 100px;
+  
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: none;
+  width: 15%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Optional: Add styles for the submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the searched-item */
+.searched-item {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+}
+
+/* Style for the searched-item link */
+.searched-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for the searched-item paragraph */
+.searched-item p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Optional: Add styles for the searched-item hover effect */
+.searched-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style for the suggestions */
+.suggestions {
+  position: absolute;
+  top: calc(80% + 1px); /* Adjusted top position */
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+  list-style: none;
+}
+
+/* Style for the suggestion items */
+.suggestions li {
+  padding: 5px 0;
+}
+
+/* Style for the suggestion links */
+.suggestions li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional: Add styles for the suggestion item hover effect */
+.suggestions li:hover {
+  background-color: #f9f9f9;
+}
+@media (max-width: 375px) {
+  .container {
+    height: 90vh;
     background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
     align-items: center;
     justify-content: center;
@@ -166,17 +435,120 @@ button[type="submit"]:hover {
   .welcome-hero-txt h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    
   }
 
   .welcome-hero-txt p {
     font-size: 16px;
-    max-width: 500px;
+    max-width: 375px;
   }
 
   .welcome-btn {
-    width: 180px;
+    display: none;
+    width: 120px;
+    margin-left: 10px;
     height: 50px;
-    margin-top: 40px;
-    margin-bottom: 20px; /* Added margin to the bottom */
+    margin-top: 30px;
+    margin-bottom: 0px; /* Added margin to the bottom */
   }
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+ 
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: none;
+  width: 15%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Optional: Add styles for the submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the searched-item */
+.searched-item {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+}
+
+/* Style for the searched-item link */
+.searched-item a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for the searched-item paragraph */
+.searched-item p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Optional: Add styles for the searched-item hover effect */
+.searched-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style for the suggestions */
+.suggestions {
+  position: absolute;
+  top: calc(80% + 1px); /* Adjusted top position */
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it appears above other content */
+  max-width: 80%; /* Adjust width as needed */
+  list-style: none;
+}
+
+/* Style for the suggestion items */
+.suggestions li {
+  padding: 5px 0;
+}
+
+/* Style for the suggestion links */
+.suggestions li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Optional: Add styles for the suggestion item hover effect */
+.suggestions li:hover {
+  background-color: #f9f9f9;
 }
