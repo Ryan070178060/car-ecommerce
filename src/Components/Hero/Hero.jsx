@@ -31,16 +31,16 @@ const Hero = () => {
   const handleChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
-    filterProducts(query, allProducts);
+    filterProducts(query);
   };
 
-  const filterProducts = (query, products) => {
+  const filterProducts = (query) => {
     if (!query) {
       setFilteredProducts([]);
       setSuggestions([]);
       return;
     }
-    const filtered = products.filter(product =>
+    const filtered = allProducts.filter(product =>
       product.name.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredProducts(filtered);
@@ -105,3 +105,4 @@ const Hero = () => {
 }
 
 export default Hero;
+
