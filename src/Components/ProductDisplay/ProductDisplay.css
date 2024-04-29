@@ -94,6 +94,27 @@ gap: 20px;
 .productdisplay span{
     font-weight: 600;
 }
+.welcom-btn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background: #4e4ffa;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px; /* Adjust this value to change the roundness */
+    border: none; /* Remove any existing border */
+    margin-top: 95px;
+    -webkit-transition: .3s linear; 
+    -moz-transition: .3s linear; 
+    -ms-transition: .3s linear; 
+    -o-transition: .3s linear;
+    transition: .3s linear;
+  }
+  
+  .welcom-btn:hover {
+    background: #0102fa;
+  }
+  
 @media(max-width:1280px){
     .productdisplay{
         margin: 0px 60px;

@@ -56,7 +56,7 @@ const ProductDisplay = (props) => {
                 <p className="productdisplay-right-category"><span>Category :</span>SUV,Sports,Electric, Muscle</p>
                 <p className="productdisplay-right-category"><span>Tags :</span>Model, Latest</p>
                 {/* Button added here */}
-                <button className="welcome-btn" onClick={openWhatsAppContact}>Order Now</button>
+                <button className="welcom-btn" onClick={openWhatsAppContact}>Order Now</button>
             </div>
         </div>
     );
