@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate and Link
 import "./Hero.css";
-import Item from '../Item/Item';
 
 const Hero = () => {
   const phoneNumber = '+254701978060';
   const navigate = useNavigate(); // Use useNavigate hook
 
   const [allProducts, setAllProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchedItem, setSearchedItem] = useState({});
   const [suggestions, setSuggestions] = useState([]);
@@ -36,14 +34,12 @@ const Hero = () => {
 
   const filterProducts = (query) => {
     if (!query) {
-      setFilteredProducts([]);
       setSuggestions([]);
       return;
     }
     const filtered = allProducts.filter(product =>
       product.name.toLowerCase().includes(query.toLowerCase())
     );
-    setFilteredProducts(filtered);
     setSuggestions(filtered.slice(0, 5)); // Show only first 5 suggestions
   };
 
@@ -105,4 +101,3 @@ const Hero = () => {
 }
 
 export default Hero;
-
