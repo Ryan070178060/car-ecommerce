@@ -134,8 +134,14 @@
     .nav-menu{
         display: flex;
         background-color: black;
-        width: fit-content;
+        width: 100%;
+        gap: 2px;
     
+    }
+    .nav-menu li{
+       margin-left: 0px;
+       margin-right: 20px;
+       
     }
     
 }

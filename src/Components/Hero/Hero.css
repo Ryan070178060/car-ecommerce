@@ -161,9 +161,8 @@ button[type="submit"]:hover {
     justify-content: center;
   }
   .welcome-hero-txt {
-    margin-left: 2px;
-    margin-right: 32px;
-    padding: 22px 32px;
+   
+    padding: 22px 22px;
     margin-bottom: 190px;
     margin-top: 2px;
     max-width: 500px;
@@ -199,10 +198,7 @@ button[type="submit"]:hover {
     margin-bottom: 280px;
   }
 
-  .welcome-hero-txt h2 {
-    font-size: 32px;
-    margin-bottom: 0px;
-  }
+  
 
   .welcome-hero-txt p {
     font-size: 16px;
@@ -214,6 +210,20 @@ button[type="submit"]:hover {
     height: 50px;
     margin-top: 40px;
   }
+  .suggestions {
+    position: absolute;
+    top: calc(80% + 1px); /* Adjusted top position */
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it appears above other content */
+    max-width: 80%; /* Adjust width as needed */
+    list-style: none;
+  }
 }
 
 @media (max-width: 375px) {
@@ -221,11 +231,7 @@ button[type="submit"]:hover {
     height: 90vh;
     background: linear-gradient(rgb(33, 71, 35) 0%, rgb(63, 109, 78) 90% 100%);
     align-items: center;
-    justify-content: center;
-  }
-
-  .welcome-hero-txt h2 {
-    margin-bottom: 20px;
+    
   }
 
   .welcome-btn {
@@ -238,6 +244,8 @@ button[type="submit"]:hover {
   form {
     width: 90%; /* Adjusted width */
     padding-bottom: 5px;
+    margin-left: 15px;
   }
+
 
 }
