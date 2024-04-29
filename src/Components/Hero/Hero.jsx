@@ -64,7 +64,7 @@ const Hero = () => {
       <div className="welcome-hero-txt">
         <h2>get your desired car in reasonable price</h2>
         <p>
-          Get the coolest lambos and rarris at an exclusive price, customs also available.
+          Get the coolest cars and services at an exclusive price, customs also available.
         </p>
         <button className="welcome-btn" onClick={openWhatsAppContact}>contact us</button>
       </div>
