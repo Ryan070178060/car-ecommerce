@@ -68,7 +68,7 @@ input[type="text"] {
 }
 
 button[type="submit"] {
-  width: 15%;
+  width: 0%;
   display: none;
   padding: 10px;
   border: none;
